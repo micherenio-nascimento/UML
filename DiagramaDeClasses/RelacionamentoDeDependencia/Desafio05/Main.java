@@ -2,8 +2,9 @@ class Main{
 
     public static void main(String[] args){
 
-        Notificacao popup = new Notificacao();
-        popup.enviarMensagem(new Mensagem("Olá, usuário!"));
+        Alarme alarm = new Alarme();
+        Sensor sen = new Sensor(false);
+        alarm.verificarAlerta(sen);
         
     }
 
